@@ -1,0 +1,88 @@
+html, 
+body{
+    font-family: Satoshi;
+    background-color: #f6f6f6;
+    font-size: 16px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    margin: 3.125em 0em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: clamp(800px, 50%, 1127px);
+    align-self: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("pictures/Shoes.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35%;
+    height: 35em;
+    margin-top: 4.125em;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3.1875rem;
+}
+
+h1{
+    color: #1B1B1B;
+    margin: 0;
+    font-size: 3.375rem;
+}
+
+a{
+    color: #1B1B1B;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+button{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    padding: .3em 0.7em;
+    border: none;
+    border-radius: 15px;
+    background-color: #D20223;
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover{
+    background-color: #1B1B1B;
+}
+
+.highlight {
+    color:#D20223;
+}
+
+.btn{
+    align-self: center;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 1000px){
+    section{
+        background-size: 45vh;
+        height: 30em;
+    }
+}
