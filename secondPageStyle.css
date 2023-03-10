@@ -4,6 +4,59 @@
     --secondary-color:#D20223;
 }
 
-/* .icon{
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Satoshi;
+    font-size: 16px;
+}
+
+header{
+    padding: 2.5em 0em;
+    background-color: var(--main-color);
+}
+
+header .icon{
     filter: invert(100%);
-} */
+    align-self: center;
+}
+
+header .icon-link {
+    filter: invert(100%);
+}
+
+header a{
+    color: var(--background-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+input[type="search"]{
+    width: 40em;
+    padding: 1em 0em;
+    border: none;
+    border-radius: 15px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3.375rem;
+}
+
+nav, .search-bar{
+    justify-self: end;
+}
+
+.header-container{
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 2.5em;
+    align-content: center;
+    margin: 0px 27.75em;
+}
+
+.search-bar{
+    grid-column-start: 2;
+}
