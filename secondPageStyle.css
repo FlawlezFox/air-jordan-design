@@ -14,6 +14,8 @@
 header{
     padding: 2.5em 0em;
     background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
 }
 
 header .icon{
@@ -32,7 +34,7 @@ header a{
 }
 
 input[type="search"]{
-    width: 40em;
+    width: 33.3vw;
     padding: 1em 0em;
     border: none;
     border-radius: 15px;
@@ -52,9 +54,8 @@ nav, .search-bar{
 .header-container{
     box-sizing: border-box;
     display: grid;
-    grid-gap: 2.5em;
-    align-content: center;
-    margin: 0px 27.75em;
+    grid-template-columns: repeat(auto-fit, minmax(5.5em, 1fr 2fr));
+    grid-gap: 2.5em 22vw;
 }
 
 .search-bar{
