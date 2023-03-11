@@ -33,11 +33,19 @@ header a{
     font-size: 1.5rem;
 }
 
-input[type="search"]{
+input.search-input{
+    background: url(pictures/search-icon.svg) no-repeat 1em center;
+    background-color: var(--background-color);
     width: 33.3vw;
-    padding: 1em 0em;
+    padding: 1em 4em;
+    display: block;
     border: none;
     border-radius: 15px;
+}
+
+input.search-input::placeholder{
+    color: var(--main-color);
+    font-size: 1.25em;
 }
 
 nav{
